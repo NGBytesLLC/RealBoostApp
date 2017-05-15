@@ -20,7 +20,7 @@ pipeline {
         //Install npm ,first run
         sh "python3 --version"
         sh "pip --version" 
-        pip install --upgrade --user awsebcli
+        sh "pip install --upgrade --user awsebcli"
         sh "export PATH=~/.local/bin:/usr/bin/aws:$PATH"
         sh 'node -v'
         sh 'eb --version'
