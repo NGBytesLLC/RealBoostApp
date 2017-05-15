@@ -23,8 +23,7 @@ pipeline {
         sh "pip install --upgrade --user awsebcli"
         sh "export PATH=/var/lib/jenkins/.local/bin:$PATH"
         sh 'node -v'
-        sh 'var/lib/jenkins/.local/bin/eb --version'
-        sh '~/.local/bin/eb --version'
+        sh '/var/lib/jenkins/.local/bin/eb --version'
       }
     }
     stage('dev') {
