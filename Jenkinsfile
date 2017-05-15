@@ -21,7 +21,7 @@ pipeline {
         sh "python3 --version"
         sh "pip --version" 
         sh "pip install --upgrade --user awsebcli"
-        sh "export PATH=~/.local/bin:/usr/bin/aws:$PATH"
+        sh "export PATH=/var/lib/jenkins/.local/bin:$PATH"
         sh 'node -v'
         sh 'eb --version'
       }
