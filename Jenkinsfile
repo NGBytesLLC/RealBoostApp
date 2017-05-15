@@ -33,7 +33,7 @@ pipeline {
       steps {
         sh 'echo $HOME'
         echo 'In the dev build step.'
-        sh "eb deploy --stage devs"
+        sh "/var/lib/jenkins/.local/bin/eb deploy env-dev"
       }
     }
     stage('test') {
@@ -42,7 +42,7 @@ pipeline {
       }
       steps {
         echo 'In the test build step.'
-        sh "eb deploy --stage test"
+        sh "/var/lib/jenkins/.local/bin/eb deploy dev-test"
       }
     }
     stage('live') {
@@ -51,7 +51,7 @@ pipeline {
       }
       steps {
         echo 'In the live build step.'
-         sh "eb deploy --stage live"
+         sh "/var/lib/jenkins/.local/bin/eb deploy env-live"
       }
     }
   }
