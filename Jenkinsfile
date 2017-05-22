@@ -13,13 +13,14 @@ pipeline {
       name: 'version_incr'
     )
   }
-  
+
   stages {
     stage('prebuild') {
       steps {
         echo 'In the pre-build step. Install dependencies, run pre-build tests, etc. here.'
         //Install npm ,first run
         sh "python3 --version"
+        sh "aws configure list"
         sh '/var/lib/jenkins/.local/bin/eb --version'
       }
     }
