@@ -20,10 +20,6 @@ pipeline {
         echo 'In the pre-build step. Install dependencies, run pre-build tests, etc. here.'
         //Install npm ,first run
         sh "python3 --version"
-        sh "pip --version" 
-        sh "pip install --upgrade --user awsebcli"
-        sh "export PATH=/var/lib/jenkins/.local/bin:$PATH"
-        sh 'node -v'
         sh '/var/lib/jenkins/.local/bin/eb --version'
       }
     }
