@@ -21,7 +21,7 @@ pipeline {
         //Install npm ,first run
         sh "python3 --version"
         sh "/var/lib/jenkins/create-creds.sh"
-        sh "export AWS_DEFAULT_PROFILE=eb-cli"
+        //sh "export AWS_DEFAULT_PROFILE=eb-cli"
         sh "aws configure list"
         sh '/var/lib/jenkins/.local/bin/eb --version'
       }
