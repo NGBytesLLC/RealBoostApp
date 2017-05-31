@@ -1,6 +1,6 @@
 ## How to start this project
 
-*This is a Ionic project*.
+*This is a [Ionic](https://ionicframework.com/) project*.
 
 You need to install a couple of packages before test the code
 1. Be sure to install NodeJS from https://nodejs.org/en/download/
