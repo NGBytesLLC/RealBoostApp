@@ -36,6 +36,7 @@ pipeline {
         sh "/var/lib/jenkins/.local/bin/eb deploy env-dev"
       }
     }
+    
     stage('test') {
       when {
         expression { params.deploy_stage == 'test' }
