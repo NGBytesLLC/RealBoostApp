@@ -1,4 +1,4 @@
-## How to start this project
+## How to get this project
 
 *This is a [Ionic](https://ionicframework.com/) project*.
 
