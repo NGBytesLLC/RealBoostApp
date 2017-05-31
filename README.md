@@ -24,8 +24,8 @@ ionic serve
 To test for specific platforms you can use:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+ionic cordova platform add ios
+ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
