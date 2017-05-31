@@ -15,7 +15,7 @@ npm install -g ionic cordova
 git clone https://github.com/NGBytesLLC/RealBoostApp
 ```
 
-It is Done! Now you can test teh code and your changes launching the built-in server from the command line. Go to the project root and run
+It is Done! Now you can test the code and your changes launching the built-in server from the command line. Go to the project root and run
 
 ```bash
 ionic serve
