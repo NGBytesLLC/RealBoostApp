@@ -1,21 +1,27 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## How to start this project
 
-## How to use this template
+*This is a Ionic project*.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+You need to install a couple of packages before test the code
+1. Be sure to install NodeJS from https://nodejs.org/en/download/
+2. Once NodeJS is installed, run from the command line
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+npm install -g ionic cordova
+```
+3. Now you can clone the project as usual(Ah! be sure to have Git installed also...)
+
+```bash
+git clone https://github.com/NGBytesLLC/RealBoostApp
 ```
 
-Then, to run it, cd into `myBlank` and run:
+It is Done! Now you can test teh code and your changes launching the built-in server from the command line. Go to the project root and run
+
+```bash
+ionic serve
+```
+
+To test for specific platforms you can use:
 
 ```bash
 $ ionic cordova platform add ios
@@ -23,4 +29,3 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
-
